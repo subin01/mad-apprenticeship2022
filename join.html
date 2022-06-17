@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Volunteering | Make a Difference</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2F2F2F" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="styles/common.css" rel="stylesheet" />
+  <link href="styles/join.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="index.html">MAD</a>
+      <div class="inner">Apply Now!</div>
+      <button class="menu">Menu</button>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Volunteering 2021</a>
+        </li>
+        <li>
+          <a href="apprenticeship.html">Program Details</a>
+        </li>
+        <li>
+          <a href="learn.html">Learn More</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="loading">Loading...</div>
+
+  <div id="app" style="visibility: hidden">
+
+
+    <!-- ######################################### Panel start ######################################### -->
+    <section class="panel-join">
+      <article>
+        <div class="inner">
+
+          <div class="icon cube spin"><span /></div>
+
+          <div class="grid-wrap">
+            <div class="headings">
+              <h3>The MAD Volunteering Program is ready for you. </h3>
+              <h1>
+                <span class="paper-cut">Are you</span>
+                <span class="paper-cut"> <strong>MAD</strong></span>
+                <span class="paper-cut"><strong>enough?</strong></span>
+              </h1>
+            </div>
+          </div>
+
+          <div id="form-area" class="grid-wrap">
+            <form action="system/join.php" method="post" id="form">
+              <input type="hidden" name="campaign" value="" id="campaign">
+              <div class="row" id="form-area-2">
+                <div class="col-md-6">
+                  <label for="name" class="dot">Name:</label>
+                  <input type="text" id="name" name="name" value="" required="">
+
+                  <label for="email" class="dot">Email:</label>
+                  <input type="email" id="email" name="email" value="" required="">
+
+                  <label for="phone" class="dot">Phone:</label>
+                  <input type="tel" id="phone" name="phone" value="" required="" pattern="[\+\-0-9 ]{10,14}">
+
+                  <label for="sex" class="dot">
+                    <select class="" id="sex" name="sex" required="">
+                      <option value="">Gender</option>
+                      <option value="m">Male</option>
+                      <option value="f">Female</option>
+                      <option value="o">Other</option>
+                      <option value="non-binary">Non-Binary</option>
+                      <option value="not-given">Prefer not to say</option>
+                    </select>
+                  </label>
+
+                  <label for="city_id" class="dot">
+                    <select class="dot" id="city_id" name="city_id" required="">
+                      <option value="">City</option>
+                      <option value="24">Ahmedabad</option>
+                      <option value="1">Bangalore</option>
+                      <option value="21">Bhopal</option>
+                      <option value="13">Chandigarh</option>
+                      <option value="6">Chennai</option>
+                      <option value="10">Cochin</option>
+                      <option value="16">Coimbatore</option>
+                      <option value="25">Dehradun</option>
+                      <option value="12">Delhi</option>
+                      <option value="23">Guntur</option>
+                      <option value="19">Gwalior</option>
+                      <option value="11">Hyderabad</option>
+                      <option value="20">Lucknow</option>
+                      <option value="2">Mangalore</option>
+                      <option value="4">Mumbai</option>
+                      <option value="22">Mysore</option>
+                      <option value="15">Nagpur</option>
+                      <option value="5">Pune</option>
+                      <option value="3">Trivandrum</option>
+                      <option value="8">Vellore</option>
+                      <option value="18">Vijayawada</option>
+                      <option value="17">Vizag</option>
+                    </select>
+                  </label>
+
+<!--                   <label for="source" class="dot">
+                    <select class="" id="source" name="source" required="">
+                      <option value="">How did you know about MAD?</option>
+                      <option value="friends">Friends</option>
+                      <option value="college">College Presentation</option>
+                      <option value="media">Media</option>
+                      <option value="internet">Social Media</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </label> -->
+
+                  <!-- <p>For more details on the roles, please <a class="underline external" href="https://docs.google.com/document/d/e/2PACX-1vRo64TdDhHZ-6TB2S-ZXFrJD1wnc7PgFYqIf0XMk785b1mojCwvsKuWqX10_3nbHU4T8El1Yd8D3ql6/pub">click here</a>.</p> -->
+                  <p>For more details on the roles, please <a class="underline external" href="roles.html">click here</a>.</p>
+
+                  <label for="applied_role" class="dot">
+                    <select class="" id="applied_role" name="applied_role" required>
+                      <option value="">Choose first preference for role</option>
+                      <option value="">Choose a city to see available roles in that city</option>
+                    </select>
+                  </label>
+
+                  <label for="applied_role_secondary" class="dot">
+                    <select class="" id="applied_role_secondary" name="applied_role_secondary" required>
+                      <option value="">Choose second preference for role</option>
+                      <option value="">Choose a city to see available roles in that city</option>
+                    </select>
+                  </label>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="phone" class="dot">Date of Birth</label>
+                  <input type="date" id="dob" name="dob" value="" required="">
+
+                  <label for="job_status" class="dot">
+                    <select class="" id="job_status" name="job_status" required>
+                      <option value="">Choose Job Status</option>
+                      <option value="working">Working</option>
+                      <option value="student">Student</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </label>
+
+                  <div class="working-section">
+                    <label for="company" class="dot">Organization</label>
+                    <input type="text" id="company" name="company" value="">
+                  </div>
+
+                  <div class="student-section">
+                    <label for="edu_institution" class="dot">Educational Institution</label>
+                    <input type="text" id="edu_institution" name="edu_institution" value="">
+
+                    <label for="edu_course" class="dot">Course</label>
+                    <input type="text" id="edu_course" name="edu_course" value="">
+
+                    <label for="edu_year" class="dot">
+                      <select class="" id="edu_year" name="edu_year">
+                        <option value="">Current Year in your Course</option>
+                        <option value="0">Not Applicable</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                        <option value="5">Fifth Year</option>
+                      </select>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <label for="volunteering_experience" class="dot">
+                  <select id="volunteering_experience" name="volunteering_experience">
+                    <option value="">Any previous volunteering experience?</option>
+                    <option value="Yes">I have voluteered before</option>
+                    <option value="">This is the first time I have volunteered</option>
+                  </select>
+
+                  <textarea id="volunteering_experience_details" name="volunteering_experience_details" rows="5" cols="40" placeholder="Give us some details about your previous experience"></textarea>
+
+                  <label for="why_mad" class="dot">Why MAD?</label>
+                  <div class="checkbox-section">
+                    <input type="radio" name="why_mad" id="why_mad_oppertunity" value="Opportunity to make a difference"> 
+                    <label for="why_mad_oppertunity">I see it as an opportunutity to make a difference</label><br />
+
+                    <input type="radio" name="why_mad" id="why_mad_academic_credits" value="Academic Credits"> 
+                    <label for="why_mad_academic_credits">This will help me get academic credits</label><br />
+
+                    <input type="radio" name="why_mad" id="why_mad_improve_resume" value="Improve Resume"> 
+                    <label for="why_mad_improve_resume">This will improve my resume</label><br />
+
+                    <input type="radio" name="why_mad" id="why_mad_free_time" value="Free Time"> 
+                    <label for="why_mad_free_time">I want to occupy my free time</label><br />
+
+                    <input type="radio" name="why_mad" id="why_mad_social_network" value="Social Network">
+                    <label for="why_mad_social_network">I want to meet more people, develop a social network with other volunteers</label><br />
+
+                    <input type="radio" name="why_mad" id="why_mad_other" value="Other">
+                    <label for="why_mad_other">Any other reasons?</label>
+                    <textarea name="why_mad_other" rows="5" cols="40"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="applynow" id="sticky-submit-button">
+                <button type="submit"> Apply Now!</button>
+              </div>
+            </form>
+
+            <div id="loading" class="overlay">
+              <div class="icon laptop stop-motion2"><span /></div>
+              <h3>Submitting...</h3>
+            </div>
+
+          </div>
+
+          <div class="grid-wrap" id="response-area">
+            <div id="result">
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+
+    <footer>
+      <div class="wrap">
+        <span>&copy; Make a Difference India, 2020.</span>
+        <span>Designed by THIS</span>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="scripts/common.js"></script>
+    <script type="module" src="scripts/join.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109411723-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109411723-2');
+    </script>
+
+</body>
+
+</html>
