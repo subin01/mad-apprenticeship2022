@@ -42,6 +42,10 @@
     top: 0;
   }
 
+  .stair1 {
+    transform: scale(-2.5, 2.5) translateX(-5%);
+  }
+
   h1 {
     margin-bottom: 0;
     font-size: 2.6rem;
@@ -77,12 +81,14 @@
   }
 
   .gal {
-    margin-left: var(--spacing-left);
+    margin-left: 0;
     margin-top: 14rem;
-    background: url('../assets/madgal.png') no-repeat bottom;
+    // background: url('../assets/gifs/Slide.gif') no-repeat bottom;
+    background: url('../assets/gifs/Duck.gif') no-repeat bottom;
     background-size: contain;
-    width: 9rem;
-    height: 13rem;
+    width: 16rem;
+    height: 16rem;
+    transform: translate(-15%, 0px);
   }
 
   .fist1,
@@ -92,21 +98,21 @@
   }
 
   .fist1 {
-    bottom: 2rem;
+    bottom: -1rem;
     left: 6rem;
     // animation: float 6s ease-in-out infinite;
   }
 
   .fist2 {
-    left: 4rem;
-    bottom: 4.5rem;
+    left: 1rem;
+    bottom: 1rem;
     // animation: float 6s ease-in-out infinite;
     animation-delay: 1s;
   }
 
   .fist3 {
-    left: 2rem;
-    bottom: 7rem;
+    left: -4rem;
+    bottom: 3rem;
     // animation: float 6s ease-in-out infinite;
     animation-delay: 2s;
   }

@@ -1,105 +1,132 @@
 #volunteering_experience_details,
 .student-section,
 .working-section {
-  display: none; }
+  display: none;
+}
 
 #form-area .checkbox-section input,
 #form-area .checkbox-section label {
   display: inline;
   width: 1em;
   margin: 0.5em 0;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .underline {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 /* -------------------------------- PANEL About----------------------------- */
 .panel-join {
-  padding-top: var(--header-reserve); }
-  .panel-join .inner {
-    position: relative;
-    margin-top: 6rem;
-    margin-bottom: 12rem;
-    min-height: 50rem; }
-  .panel-join .headings {
-    margin: 6.5rem 3rem 4rem 0; }
-    .panel-join .headings h1 {
-      margin-top: 3rem;
-      line-height: 1.25; }
-      .panel-join .headings h1 span {
-        transform: rotate(2deg);
-        margin-top: -1rem; }
-      .panel-join .headings h1 span:first-child,
-      .panel-join .headings h1 span:last-child {
-        transform: rotate(-2deg) translateX(0.5rem); }
-    .panel-join .headings h3 {
-      margin-bottom: 0; }
-    .panel-join .headings p {
-      text-align: right; }
-  .panel-join .cube {
-    left: 23rem;
-    top: 14rem; }
-  .panel-join .laptop {
-    z-index: 1;
-    top: 0rem;
-    left: 36%; }
-  .panel-join form {
-    margin: 0 auto; }
-  .panel-join label,
-  .panel-join input,
-  .panel-join textarea,
-  .panel-join select {
-    width: 100%;
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 1.25rem; }
-  .panel-join input,
-  .panel-join textarea,
-  .panel-join select {
-    background: none;
-    border: none;
-    border-bottom: 2px solid var(--color-dark);
-    outline: none; }
-    .panel-join input:focus,
-    .panel-join textarea:focus,
-    .panel-join select:focus {
-      border-color: var(--color-red); }
-  .panel-join select {
-    width: auto;
-    outline: none;
-    background: none; }
-  .panel-join input,
-  .panel-join select {
-    margin-bottom: 4rem; }
-  .panel-join input {
-    margin-top: 1rem; }
-  .panel-join .sr-only {
-    text-indent: -9999px; }
-  .panel-join .dot {
-    position: relative; }
-    .panel-join .dot::before {
-      content: '';
-      width: 0.5rem;
-      height: 0.5rem;
-      background: var(--color-dark);
-      position: absolute;
-      top: 0.5rem;
-      left: -1em; }
-  .panel-join #form-area {
-    position: relative; }
-  .panel-join #result {
-    font-size: 1.3rem; }
-    .panel-join #result li {
-      font-size: 1.3rem;
-      margin-bottom: 1em; }
-  .panel-join .overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: var(--color-light) url("../assets/mad-texture1.png");
-    padding: 10rem var(--spacing-1);
-    text-align: center; }
+  padding-top: var(--header-reserve);
+}
+.panel-join .inner {
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  min-height: 50rem;
+}
+.panel-join .headings {
+  margin: 6.5rem 3rem 4rem 0;
+}
+.panel-join .headings h1 {
+  margin-top: 3rem;
+  line-height: 1.25;
+}
+.panel-join .headings h1 span {
+  transform: rotate(2deg);
+  margin-top: -1rem;
+}
+.panel-join .headings h1 span:first-child,
+.panel-join .headings h1 span:last-child {
+  transform: rotate(-2deg) translateX(0.5rem);
+}
+.panel-join .headings h3 {
+  margin-bottom: 0;
+}
+.panel-join .headings p {
+  text-align: right;
+}
+.panel-join .cube {
+  left: 23rem;
+  top: 14rem;
+}
+.panel-join .laptop {
+  z-index: 1;
+  top: 0rem;
+  left: 36%;
+}
+.panel-join form {
+  margin: 0 auto;
+}
+.panel-join label,
+.panel-join input,
+.panel-join textarea,
+.panel-join select {
+  width: 100%;
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+.panel-join input,
+.panel-join textarea,
+.panel-join select {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-dark);
+  outline: none;
+}
+.panel-join input:focus,
+.panel-join textarea:focus,
+.panel-join select:focus {
+  border-color: var(--color-red);
+}
+.panel-join select {
+  width: auto;
+  outline: none;
+  background: none;
+}
+.panel-join input,
+.panel-join select {
+  margin-bottom: 4rem;
+}
+.panel-join input {
+  margin-top: 1rem;
+}
+.panel-join .sr-only {
+  text-indent: -9999px;
+}
+.panel-join .dot {
+  position: relative;
+}
+.panel-join .dot::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--color-dark);
+  position: absolute;
+  top: 0.5rem;
+  left: -1em;
+}
+.panel-join #form-area {
+  position: relative;
+}
+.panel-join #result {
+  font-size: 1.3rem;
+}
+.panel-join #result li {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+.panel-join .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--color-light) url("../assets/mad-texture1.png");
+  padding: 10rem var(--spacing-1);
+  text-align: center;
+}/*# sourceMappingURL=join.css.map */
